@@ -1,6 +1,6 @@
-# Nioh 2 Native Mod Loader
+# Nioh Native Mod Loader
 
-A **dinput8.dll** proxy for Nioh 2 that automatically scans and injects DLL mods from a `mods/` folder next to the game executable.
+A **dinput8.dll** proxy for Nioh that automatically scans and injects DLL mods from a `mods/` folder next to the game executable.
 
 ## How it works
 
@@ -13,19 +13,21 @@ A **dinput8.dll** proxy for Nioh 2 that automatically scans and injects DLL mods
 ## Setup
 
 1. Build the project (Visual Studio, x64) or use a pre-built `dinput8.dll`.
-2. Copy **`dinput8.dll`** into your **Nioh 2 game folder** (the folder that contains `Nioh2.exe`).
+2. Copy **`dinput8.dll`** into your **Nioh game folder** (the folder that contains `Nioh3.exe`).
 3. Create a **`mods`** folder in that same game folder (the loader will create it if it doesn’t exist, but it will be empty).
 4. Put your native mod **.dll** files inside **`mods/`**.
-5. Start Nioh 2 as usual.
+5. Start Nioh as usual.
 
 Your layout should look like:
 
 ```
-Nioh2.exe
+Nioh3.exe
 dinput8.dll      ← this loader
 mods/
-  SomeMod.dll
-  AnotherMod.dll
+  SomeMod/
+    SomeMod.dll
+  AnotherMod/
+    AnotherMod.dll
 ```
 
 ## Building
